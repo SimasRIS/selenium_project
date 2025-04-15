@@ -2,8 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from wordcloud import WordCloud
-from langdetect import detect
-from textblob import TextBlob
+
 
 
 file_path = 'C:/Users/simas/PycharmProjects/selenium_project/data/processed/cleaned_review_comments.csv'
