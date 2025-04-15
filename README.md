@@ -7,9 +7,9 @@ išanalizuoti ir vizualizuoti atsiliepimų turinį ir reitingus, bei suskirstyti
 ### Reikalavimai:
 
 1. Bibliotekos
-    pandas – struktūrizuotų duomenų analizė
-    bs4 (BeautifulSoup) – HTML apžvalgų nuskaitymas
-    matplotlib – duomenų vizualizavimas
+    pandas – struktūrizuotų duomenų analizė.
+    bs4 (BeautifulSoup) – HTML apžvalgų nuskaitymas.
+    matplotlib – duomenų vizualizavimas.
     sklearn – klasterizacijos metodai (KMeans, DBSCAN).
 
 2. Funkcionalumas
