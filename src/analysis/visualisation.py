@@ -87,7 +87,6 @@ def main():
     reiting_destribution()
     most_used_words()
     review_count_by_date()
-    generate_wordcloud()
 
 if __name__ == '__main__':
     main()
