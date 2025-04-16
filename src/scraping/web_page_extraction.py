@@ -1,10 +1,21 @@
 import time
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common import ElementNotInteractableException,TimeoutException
 
+file = 'C:/Users/simas/PycharmProjects/selenium_project/data/raw/restaurant_links.txt'
+
+# Issaugome URL
+def save_links_to_file(links, file_path=file):
+    out = Path(file_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w", encoding="utf-8") as f:
+        for link in links:
+            f.write(link + "\n")
+    print(f"Saved {len(links)} links → {out.resolve()}")
 
 def main():
     # Inicijuojame WebDriver
@@ -76,9 +87,7 @@ def main():
 
     print(f"Found {len(restaurant_links)} restaurants.")
 
-    with open("../../data/raw/restaurant_links.txt", "w", encoding="utf-8") as file:
-        for link in restaurant_links:
-            file.write(link + '\n')
+    save_links_to_file(restaurant_links)
 
     driver.quit()
 

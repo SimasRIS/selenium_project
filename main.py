@@ -1,3 +1,5 @@
+from nltk.corpus.reader import reviews
+
 from src.scraping import comments_extraction, web_page_extraction
 from src.analysis import review_comments_cleaning, visualisation, clusters
 from src.analysis.visualisation import generate_wordcloud
@@ -6,19 +8,22 @@ generate_wordcloud()
 
 def main_meniu():
     print("\nPasirinkite veiksmą:")
-    print("1. WebScraping and review extraction")
-    print("2. Cleaning data")
-    print("3. Visualisation")
-    print("4. Clustering")
-    print("5. Exit")
-    choice = input("Choose number between 1 and 5: ")
+    print("1. Extracting restaurants")
+    print("2. Extracting reviews")
+    print("3. Cleaning data")
+    print("4. Visualisation")
+    print("5. Clustering")
+    print("6. Exit")
+    choice = input("Choose number between 1 and 6: ")
     return choice
 
-def web_scraping():
+def restaurant_scraping():
     print("\nStarting WebSraping and review extraction...")
     web_page_extraction.main()
     print("WebSraping complete.")
-    print("Starting review extraction...")
+
+def reviews_scraping():
+    print("\nStarting review extraction...")
     comments_extraction.main()
     print("Review extraction complete.")
 
@@ -42,14 +47,16 @@ def main():
        while True:
         choise = main_meniu()
         if choise == "1":
-            web_scraping()
+            restaurant_scraping()
         elif choise == "2":
-            data_cleaning()
+            reviews_scraping()
         elif choise == "3":
-            visualisation_main()
+            data_cleaning()
         elif choise == "4":
-            clustering()
+            visualisation_main()
         elif choise == "5":
+            clustering()
+        elif choise == "6":
             print("Exiting...!")
             break
         else:
