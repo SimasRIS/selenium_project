@@ -1,5 +1,3 @@
-from nltk.corpus.reader import reviews
-
 from src.scraping import comments_extraction, web_page_extraction
 from src.analysis import review_comments_cleaning, visualisation, clusters
 from src.analysis.visualisation import generate_wordcloud
