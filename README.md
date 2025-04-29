@@ -43,11 +43,10 @@ išanalizuoti ir vizualizuoti atsiliepimų turinį ir reitingus, bei suskirstyti
 ## Turinys
 
 1. Projekto apžvalga
-2. Pagrindiniai bruožai
-3. Diegimo ir paleidimo instrukcijos
-4. Programos meniu
-5. Vizualizacijos ir įžvalgos
-6. Duomenų grupavimas
+2. Diegimo ir paleidimo instrukcijos
+3. Programos meniu
+4. Vizualizacijos ir įžvalgos
+5. Duomenų grupavimas
 
 ---
 
@@ -98,15 +97,6 @@ Pasirinkite norimą veiksmą įvesdami atitinkamą skaičių.
 - Klasterizavimas DBSCAN algoritmu (`clusters.py`)
 
 Projekto tikslas – išanalizuoti, kaip klientai vertina kinų restoranus skirtinguose Lietuvos miestuose ir nustatyti dažniausiai pasikartojančius žodžius atsiliepimų turinyje.
-
----
-
-## Pagrindiniai bruožai
-
-- **Automatinis duomenų surinkimas.** Selenium automatiškai ištraukia restoranų nuorodas ir viešus atsiliepimus iš naršyklės.
-- **Gilus duomenų valymas.** Pašalinami besidubliuojantys įrašai, nereikalingi simboliai, pritaikomas lietuviškų simbolių apdorojimas.
-- **Intuityvios vizualizacijos.** Aiškūs grafikai leidžia lengvai suprasti atsiliepimų pasiskirstymą, dažniausiai minimus žodžius ir grupes.
-- **Temų bei nuotaikų grupavimas.** DBSCAN klasterizavimas padeda atskleisti vyraujančias atsiliepimų temas ir įvertinimų tendencijas.
 
 ---
 
