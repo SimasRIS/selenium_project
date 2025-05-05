@@ -52,22 +52,32 @@ išanalizuoti ir vizualizuoti atsiliepimų turinį ir reitingus, bei suskirstyti
 
 ## Diegimo ir paleidimo instrukcijos
 
-```bash
-# 1 — Klonuokite saugyklą
+
+1. Klonuokite saugyklą
+```
 $ git clone https://github.com/SimasRIS/selenium_project.git
+```
+```
 $ cd kinu_restoranai
-
-# 2 — (Rekomenduojama) Sukurkite virtualią aplinką
+```
+2. (Rekomenduojama) Sukurkite virtualią aplinką
+```
 $ python -m venv venv
-# Windows
+```
+- Windows
+```
 $ venv\Scripts\activate
-# macOS/Linux
+```
+- macOS/Linux
+```
 $ source venv/bin/activate
-
-# 3 — Įdiekite priklausomybes
+```
+3. Įdiekite priklausomybes
+```
 $ pip install -r requirements.txt
-
-# 4 — Paleiskite programą
+```
+4. Paleiskite programą
+```
 $ python main.py
 ```
 
